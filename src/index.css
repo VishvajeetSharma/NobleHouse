@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Sanchez:ital@0;1&display=swap');
+
+.font-garamond {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-google {
+  font-family: "Google Sans", sans-serif;
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, #4A101C, #812D3A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-primary-gradient {
+    background: linear-gradient(to right, #4A101C, #812D3A);
+  }
+
+  .text-brandpink {
+    color: #4A101C;
+  }
+
+  .bg-brandpink {
+    background-color: #4A101C;
+  }
+}
+
+/* body{
+  padding-left: 40px;
+  padding-right: 40px;
+} */
+/* ════ Luxury Custom Scrollbar for NOBLE HOUSE ════ */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+  border-left: 1px solid #E7DCD7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4A101C 0%, #812D3A 100%);
+  border-radius: 9999px;
+  border: 2px solid #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #350B14 0%, #4A101C 100%);
+  border: 1.5px solid #F1E8E2;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #812D3A #FAF7F2;
+}
