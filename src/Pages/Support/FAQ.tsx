@@ -23,7 +23,7 @@ interface FAQ {
 interface Tab {
   id: string;
   label: string;
-  icon: React.ElementType;
+  icon: any;
 }
 
 // ── Data ──
