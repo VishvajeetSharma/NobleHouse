@@ -193,23 +193,20 @@ const LoginPage = () => {
                 {/* Brand Logo */}
                 <div className="text-center mb-6">
                   <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    animate={{ scale: 1, opacity: 1 }}
                     transition={{ type: "spring", stiffness: 200 }}
-                    className="inline-flex items-center justify-center px-4 py-2 bg-white border border-[#E7DCD7] rounded-2xl mb-4 shadow-sm cursor-pointer"
+                    className="inline-flex items-center justify-center cursor-pointer mb-2"
                     onClick={() => navigate("/dashboard")}
                   >
-                    <img src={img} alt="NOBLE HOUSE" className="h-10 w-auto object-contain" />
+                    <img
+                      src={img}
+                      alt="NOBLE HOUSE"
+                      className="h-20 sm:h-24 w-auto object-contain transition-transform duration-300 hover:scale-105"
+                    />
                   </motion.div>
 
-                  <h1 className="text-2xl font-serif font-bold text-[#241719]">
-                    NOBLE{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4A101C] via-[#812D3A] to-[#4A101C]">
-                      HOUSE
-                    </span>
-                  </h1>
-                  <div className="w-14 h-0.5 bg-gradient-to-r from-[#4A101C] to-[#812D3A] mx-auto mt-2 rounded-full"></div>
-                  <p className="text-[#75676A] text-xs mt-3 flex items-center justify-center gap-1.5 font-medium">
+                  <p className="text-[#75676A] text-xs mt-1 flex items-center justify-center gap-1.5 font-medium">
                     <FaHeart size={9} className="text-[#812D3A]" />
                     Welcome to Luxury Boutique
                     <FaHeart size={9} className="text-[#812D3A]" />
