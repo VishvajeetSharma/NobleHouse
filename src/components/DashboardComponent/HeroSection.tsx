@@ -82,13 +82,13 @@ const HeroSection = () => {
           50%      { background-position: 100% 50%; }
         }
         .grad-text {
-          background: linear-gradient(110deg, #FDE68A 0%, #F59E0B 25%, #EC4899 50%, #F43F5E 75%, #FDE68A 100%);
+          background: linear-gradient(110deg, #FAF7F2 0%, #E8D9C9 20%, #D47B89 45%, #812D3A 70%, #FAF7F2 100%);
           background-size: 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
           animation: gradShift 4s ease infinite;
-          filter: drop-shadow(0 2px 20px rgba(245, 158, 11, 0.3));
+          filter: drop-shadow(0 2px 24px rgba(129, 45, 58, 0.4));
         }
 
         /* Scroll dot */
@@ -179,7 +179,7 @@ const HeroSection = () => {
                 style={{
                   fontFamily: "'Cormorant Garamond', serif",
                   fontSize: "clamp(3.2rem, 8vw, 5.5rem)",
-                  background: "linear-gradient(110deg, #FDE68A 0%, #F59E0B 25%, #EC4899 50%, #F43F5E 75%, #FDE68A 100%)",
+                  background: "linear-gradient(110deg, #FAF7F2 0%, #E8D9C9 20%, #D47B89 45%, #812D3A 70%, #FAF7F2 100%)",
                   backgroundSize: "200%",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
